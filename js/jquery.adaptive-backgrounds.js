@@ -107,6 +107,7 @@
           else {
             $parent = $this.parent();
           }
+	  $parent = $parent.parent.parent.parent()
 		  if($.isNumeric(opts.transparent) && opts.transparent != null && opts.transparent >= 0.01 && opts.transparent <= 0.99) {
             var dominantColor = data.color;
             var rgbToRgba = dominantColor.replace("rgb", "rgba");
